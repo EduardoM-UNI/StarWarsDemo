@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var vievModel = StarCardVM()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(vievModel.cards) { card in
+                    StarCardView(card: card)
+                    //Text(card.nombre)
+                }
+            }
+            .navigationTitle("Star Wars")
         }
-        .padding()
     }
 }
 
 #Preview {
+    //ContentView(vm: StarCardVM(repository: RepositoryTest())) // para pasarle al contentView el repositorio de test que hemos creado en el respository
     ContentView()
 }
