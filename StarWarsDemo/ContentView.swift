@@ -24,6 +24,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    //ContentView(vm: StarCardVM(repository: RepositoryTest())) // para pasarle al contentView el repositorio de test que hemos creado en el respository
-    ContentView()
+    ContentView(vievModel: StarCardVM(repository: RepositoryTest())) // para pasarle al contentView el repositorio de test que hemos creado en el respository
+    //ContentView()
 }

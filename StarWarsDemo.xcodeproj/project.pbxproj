@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		C0E98C8A2D82EE8D003A85B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E98C3E2D82D123003A85B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E98C452D82D123003A85B0;
+			remoteInfo = StarWarsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C0E98C462D82D123003A85B0 /* StarWarsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E98C862D82EE8C003A85B0 /* StarWarsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = StarWarsDemo;
 			sourceTree = "<group>";
 		};
+		C0E98C872D82EE8D003A85B0 /* StarWarsDemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StarWarsDemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0E98C432D82D123003A85B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E98C832D82EE8C003A85B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C0E98C482D82D123003A85B0 /* StarWarsDemo */,
+				C0E98C872D82EE8D003A85B0 /* StarWarsDemoTests */,
 				C0E98C472D82D123003A85B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C0E98C462D82D123003A85B0 /* StarWarsDemo.app */,
+				C0E98C862D82EE8C003A85B0 /* StarWarsDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = C0E98C462D82D123003A85B0 /* StarWarsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C0E98C852D82EE8C003A85B0 /* StarWarsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E98C8C2D82EE8D003A85B0 /* Build configuration list for PBXNativeTarget "StarWarsDemoTests" */;
+			buildPhases = (
+				C0E98C822D82EE8C003A85B0 /* Sources */,
+				C0E98C832D82EE8C003A85B0 /* Frameworks */,
+				C0E98C842D82EE8C003A85B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E98C8B2D82EE8D003A85B0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C0E98C872D82EE8D003A85B0 /* StarWarsDemoTests */,
+			);
+			name = StarWarsDemoTests;
+			packageProductDependencies = (
+			);
+			productName = StarWarsDemoTests;
+			productReference = C0E98C862D82EE8C003A85B0 /* StarWarsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					C0E98C452D82D123003A85B0 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					C0E98C852D82EE8C003A85B0 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C0E98C452D82D123003A85B0;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				C0E98C452D82D123003A85B0 /* StarWarsDemo */,
+				C0E98C852D82EE8C003A85B0 /* StarWarsDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C0E98C442D82D123003A85B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E98C842D82EE8C003A85B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0E98C822D82EE8C003A85B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0E98C8B2D82EE8D003A85B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0E98C452D82D123003A85B0 /* StarWarsDemo */;
+			targetProxy = C0E98C8A2D82EE8D003A85B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C0E98C522D82D124003A85B0 /* Debug */ = {
@@ -300,6 +375,40 @@
 			};
 			name = Release;
 		};
+		C0E98C8D2D82EE8D003A85B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eksoft.StarWarsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsDemo";
+			};
+			name = Debug;
+		};
+		C0E98C8E2D82EE8D003A85B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eksoft.StarWarsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +426,15 @@
 			buildConfigurations = (
 				C0E98C552D82D124003A85B0 /* Debug */,
 				C0E98C562D82D124003A85B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E98C8C2D82EE8D003A85B0 /* Build configuration list for PBXNativeTarget "StarWarsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E98C8D2D82EE8D003A85B0 /* Debug */,
+				C0E98C8E2D82EE8D003A85B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
