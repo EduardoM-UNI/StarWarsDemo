@@ -31,4 +31,3 @@ struct RepositoryTest: DataRepository {
         Bundle.main.url(forResource: "StarWars Test", withExtension: "json")!
     }
 }
-
